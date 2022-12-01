@@ -38,6 +38,19 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (aux_axis_origin 148.7 99.6)
     (pcbplotparams
@@ -813,7 +826,7 @@
     (property "Sheetname" "")
     (path "/71cb5197-ce2a-42ae-b7be-22433559aaa8")
     (attr exclude_from_pos_files)
-    (fp_text reference "H2" (at 0 -2.9) (layer "F.SilkS")
+    (fp_text reference "H2" (at 0 -2.9) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0a8bb555-8cb5-4f34-8585-62274c01c3c5)
     )
@@ -1166,7 +1179,7 @@
     (property "Sheetname" "")
     (path "/bc334cae-df70-4615-b4c4-e2015e128c82")
     (attr exclude_from_pos_files)
-    (fp_text reference "H1" (at 0 -2.9) (layer "F.SilkS")
+    (fp_text reference "H1" (at 0 -2.9) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4e49252b-d661-4ed2-909b-0258ab4aaf26)
     )
@@ -1253,7 +1266,7 @@
   (gr_arc (start 148.7 85.8) (mid 149.461522 83.961522) (end 151.3 83.2) (layer "Edge.Cuts") (width 0.1) (tstamp cdfbed5c-441e-4f80-a00b-54e2ea526104))
   (gr_line (start 148.7 85.8) (end 148.7 97.3) (layer "Edge.Cuts") (width 0.1) (tstamp d26247cc-95ec-46bc-a540-f33984c750ce))
   (gr_arc (start 151 99.6) (mid 149.373654 98.926346) (end 148.7 97.3) (layer "Edge.Cuts") (width 0.1) (tstamp d86103ad-6e2c-4908-b37d-a34981854411))
-  (gr_line (start 176.2 83.2) (end 151.29 83.2) (layer "Edge.Cuts") (width 0.1) (tstamp dad1f20e-97bd-4467-9c09-ed641b5f8903))
+  (gr_line (start 176.2 83.2) (end 151.3 83.2) (layer "Edge.Cuts") (width 0.1) (tstamp dad1f20e-97bd-4467-9c09-ed641b5f8903))
 
   (segment (start 162.10375 98.542) (end 162.68375 97.962) (width 0.25) (layer "F.Cu") (net 1) (tstamp 102d21b0-b6b0-4b9f-ad1f-c0e294158c29))
   (segment (start 175.006 92.202) (end 174.962 92.158) (width 0.25) (layer "F.Cu") (net 1) (tstamp 16a050cf-eeea-48af-a555-f069fcf5e706))
