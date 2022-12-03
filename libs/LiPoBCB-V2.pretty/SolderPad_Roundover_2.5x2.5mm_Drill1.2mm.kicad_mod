@@ -1,4 +1,4 @@
-(footprint "TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" (version 20211014) (generator pcbnew)
+(footprint "SolderPad_Roundover_2.5x2.5mm_Drill1.2mm" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 5A0F774F)
   (descr "THT rectangular pad as test Point, square 2.5mm side length, hole diameter 1.2mm")
